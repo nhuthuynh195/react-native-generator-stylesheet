@@ -3,6 +3,8 @@
 	"displayName": "react-native-generator-stylesheet",
 	"description": "An extension that allows to move inline styles in React Native to the StyleSheet.create",
 	"version": "0.0.1",
+	"publisher": "react-native-generator-stylesheet",
+	"repository": "https://github.com/nhuthuynh195/react-native-generator-stylesheet",
 	"engines": {
 		"vscode": "^1.52.0"
 	},

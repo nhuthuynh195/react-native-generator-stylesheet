@@ -16,12 +16,12 @@ function formatStyles(styles: string) {
     .replace("}", "")
     .split(",")
     .map((item) => {
-      if (item.length > 0) {
-        return addIdentationToIndividualStyle(item);
+      if (item.trim().length > 0) {
+        return addIdentationToIndividualStyle(item + ",");
       }
     })
     .join("\n");
-  return ["{", stylesLines.trim() + ",", "  }"].join("\n");
+  return ["{" + stylesLines.trim() + "  }"].join("\n");
 }
 
 export function activate(context: vscode.ExtensionContext) {
@@ -29,10 +29,12 @@ export function activate(context: vscode.ExtensionContext) {
     "react-native-generator-stylesheet.helloWorld",
     async () => {
       const { activeTextEditor, showInputBox, showInformationMessage } = window;
-      if (!activeTextEditor) return;
+      if (!activeTextEditor) {
+        return;
+      }
 
       const userStylesName = await showInputBox({
-        prompt: "Please insert your styles name",
+        prompt: "Please insert styles name",
       });
       if (!userStylesName) {
         showInformationMessage(
