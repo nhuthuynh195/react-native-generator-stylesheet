@@ -4,7 +4,6 @@ A vscode extension that allows user to moves style from JSX element to StyleShee
 
 
 ## HOW TO USE
-
 ![demo1](assets/demo.gif)
 
 * Select the style which you want to move.
