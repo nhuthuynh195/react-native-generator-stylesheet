@@ -2,8 +2,8 @@
 	"name": "react-native-generator-stylesheet",
 	"displayName": "react-native-generator-stylesheet",
 	"description": "An extension that allows to move inline styles in React Native to the StyleSheet.create",
-	"version": "0.0.2",
-	"publisher": "react-native-generator-stylesheet",
+	"version": "0.0.1",
+	"publisher": "nhutpd",
 	"repository": "https://github.com/nhuthuynh195/react-native-generator-stylesheet",
 	"engines": {
 		"vscode": "^1.52.0"
@@ -15,6 +15,7 @@
 		"onCommand:react-native-generator-stylesheet.helloWorld"
 	],
 	"main": "./dist/extension.js",
+	"icon": "assets/icon.png",
 	"contributes": {
 		"commands": [
 			{
